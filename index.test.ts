@@ -1,7 +1,7 @@
 import { assertEquals } from "https://deno.land/std@0.167.0/testing/asserts.ts";
 import { encode, decode } from "./mod.ts";
 
-Deno.test("Viginere encoding with only 'a's key and value doesn't modify output", () => {
+Deno.test("vigenere encoding with only 'a's key and value doesn't modify output", () => {
     assertEquals(encode("dog", "aaa"), "dog");
     assertEquals(encode("dOg", "aAaaaa"), "dOg");
 
@@ -10,7 +10,7 @@ Deno.test("Viginere encoding with only 'a's key and value doesn't modify output"
     assertEquals(encode("dogdogDog", "AaAAa"), "dogdogDog");
 })
 
-Deno.test("Viginere decoding with only 'a's key and value doesn't modify output", () => {
+Deno.test("vigenere decoding with only 'a's key and value doesn't modify output", () => {
     assertEquals(decode("dog", "aaa"), "dog");
     assertEquals(decode("dOg", "aAaaaa"), "dOg");
 
@@ -19,10 +19,10 @@ Deno.test("Viginere decoding with only 'a's key and value doesn't modify output"
     assertEquals(decode("dogdogDog", "AaAAa"), "dogdogDog");
 })
 
-Deno.test("Basic viginere encoding samples work", () => {
+Deno.test("Basic vigenere encoding samples work", () => {
     assertEquals(encode("This is a test", "deNo"), "Wlvg lw n hhwg")
 })
 
-Deno.test("Basic viginere decoding samples work", () => {
+Deno.test("Basic vigenere decoding samples work", () => {
     assertEquals(decode("Wlvg lw n hhwg", "deNo"), "This is a test")
 })
