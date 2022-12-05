@@ -11,8 +11,9 @@ await build({
     deno: true,
   },
   package: {
-    name: "vigenere-cipher",
+    name: "@leodog896/vigenere-cipher",
     version: "0.0.1",
+    tags: ["vigenere", "cipher", "vigenere-cipher"],
     description: "Pure TS vigenere cipher implementation",
     license: "MIT",
     repository: {
