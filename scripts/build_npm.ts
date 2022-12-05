@@ -12,7 +12,7 @@ await build({
   },
   package: {
     name: "viginere_cipher",
-    version: Deno.args[0],
+    version: "0.0.1",
     description: "Pure TS viginere cipher implementation",
     license: "MIT",
     repository: {
