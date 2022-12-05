@@ -11,16 +11,16 @@ await build({
     deno: true,
   },
   package: {
-    name: "viginere_cipher",
+    name: "vigenere-cipher",
     version: "0.0.1",
-    description: "Pure TS viginere cipher implementation",
+    description: "Pure TS vigenere cipher implementation",
     license: "MIT",
     repository: {
       type: "git",
-      url: "git+https://github.com/LeoDog896/viginere_cipher.git",
+      url: "git+https://github.com/LeoDog896/vigenere_cipher.git",
     },
     bugs: {
-      url: "https://github.com/LeoDog896/viginere_cipher/issues",
+      url: "https://github.com/LeoDog896/vigenere_cipher/issues",
     },
   },
 });
