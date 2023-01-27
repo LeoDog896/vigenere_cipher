@@ -1,6 +1,6 @@
 # vigenere cipher
 
-deno implementation of the vigenere cypher in typescript.
+deno implementation of the vigenere cypher in typescript. part of the [doke](https://github.com/LeoDog896/doke) family.
 
 Available via deno ([`vigenere_cipher`](https://deno.land/x/vigenere_cipher)) or node ([`@leodog896/vigenere-cipher`](https://npmjs.com/package/@leodog896/vigenere-cipher))
 
